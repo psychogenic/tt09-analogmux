@@ -440,26 +440,26 @@ flabel metal2 5000 5084 5060 5146 0 FreeSans 640 0 0 0 select1
 port 1 nsew
 flabel metal2 5002 4984 5062 5046 0 FreeSans 640 0 0 0 select2
 port 2 nsew
-flabel metal4 6242 4596 6446 4756 0 FreeSans 640 0 0 0 VDD
-port 3 nsew
-flabel metal4 6822 7248 7026 7408 0 FreeSans 640 0 0 0 VSS
-port 4 nsew
-flabel metal1 12846 -378 13034 -198 0 FreeSans 640 0 0 0 Z
-port 5 nsew
 flabel metal1 7694 6150 7894 6350 0 FreeSans 640 0 0 0 A1
-port 6 nsew
+port 3 nsew
 flabel metal1 8750 6148 8950 6348 0 FreeSans 640 0 0 0 A2
-port 7 nsew
+port 4 nsew
 flabel metal1 9794 6144 9994 6344 0 FreeSans 640 0 0 0 A3
-port 8 nsew
+port 5 nsew
 flabel metal1 10824 6158 11024 6358 0 FreeSans 640 0 0 0 A4
-port 9 nsew
+port 6 nsew
 flabel metal1 12008 6152 12208 6352 0 FreeSans 640 0 0 0 A5
-port 10 nsew
+port 7 nsew
 flabel metal1 13064 6150 13264 6350 0 FreeSans 640 0 0 0 A6
-port 11 nsew
+port 8 nsew
 flabel metal1 14108 6146 14308 6346 0 FreeSans 640 0 0 0 A7
-port 12 nsew
+port 9 nsew
 flabel metal1 15138 6160 15338 6360 0 FreeSans 640 0 0 0 A8
+port 10 nsew
+flabel metal1 12846 -378 13034 -198 0 FreeSans 640 0 0 0 Z
+port 11 nsew
+flabel metal4 6242 4596 6446 4756 0 FreeSans 640 0 0 0 VDD
+port 12 nsew
+flabel metal4 6822 7248 7026 7408 0 FreeSans 640 0 0 0 VSS
 port 13 nsew
 << end >>

@@ -87,8 +87,8 @@ N 800 -680 840 -680 {
 lab=OUT}
 N 800 -700 840 -700 {
 lab=OUT}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux8onehot.sym} 530 -420 0 0 {name=x1}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot_b.sym} 610 -640 0 0 {name=x2}
+C {mux8onehot.sym} 530 -420 0 0 {name=x1}
+C {mux4onehot_b.sym} 610 -640 0 0 {name=x2}
 C {sky130_fd_pr/res_high_po_1p41.sym} 1240 -600 0 0 {name=R1
 L=1.75
 model=res_high_po_1p41

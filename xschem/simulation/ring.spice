@@ -1,5 +1,5 @@
-** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/mattring/ring.sch
-.subckt ring VDD VSS enable out
+** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/ring.sch
+.subckt ring VDD enable VSS out
 *.PININFO VDD:B enable:I VSS:B out:O
 x2 enable net18 VSS VSS VDD VDD out sky130_fd_sc_hd__nand2_2
 x1 VDD VSS out net1 inverter
@@ -23,8 +23,8 @@ x19 VDD VSS net17 net18 inverter
 .ends
 
 * expanding   symbol:  inverter.sym # of pins=4
-** sym_path: /home/ttuser/vmswap/tt09-analogmux/xschem/mattring/inverter.sym
-** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/mattring/inverter.sch
+** sym_path: /home/ttuser/vmswap/tt09-analogmux/xschem/inverter.sym
+** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/inverter.sch
 .subckt inverter VDD VSS in out
 *.PININFO out:O VDD:B VSS:B in:I
 x1 in VSS VSS VDD VDD out sky130_fd_sc_hd__inv_2

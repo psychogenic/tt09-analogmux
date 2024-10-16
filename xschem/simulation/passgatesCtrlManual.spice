@@ -1,5 +1,5 @@
 ** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/passgatesCtrlManual.sch
-.subckt passgatesCtrlManual gpo0 gno0 gno1 gpo1 SEL0 SEL1 gno2 gpo2 nSEL2 SEL2 gno3 gpo3 VPWR VGND
+.subckt passgatesCtrlManual SEL0 SEL1 SEL2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3 nSEL2 VPWR VGND
 *.PININFO SEL0:I SEL1:I SEL2:I gno0:O gpo0:O gno1:O gpo1:O gno2:O gpo2:O gno3:O gpo3:O nSEL2:O VPWR:I VGND:I
 x1 SEL0 VGND VGND VPWR VPWR nSEL0 sky130_fd_sc_hd__inv_2
 x2 SEL1 VGND VGND VPWR VPWR nSEL1 sky130_fd_sc_hd__inv_2

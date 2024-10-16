@@ -212,7 +212,7 @@ C {devices/lab_pin.sym} 860 -630 2 0 {name=p1 sig_type=std_logic lab=IN5}
 C {devices/lab_pin.sym} 860 -610 2 0 {name=p2 sig_type=std_logic lab=IN6}
 C {devices/lab_pin.sym} 860 -590 2 0 {name=p3 sig_type=std_logic lab=IN7}
 C {devices/lab_pin.sym} 860 -570 2 0 {name=p8 sig_type=std_logic lab=IN8}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux8onehot.sym} 710 -630 0 0 {name=x1
+C {mux8onehot.sym} 710 -630 0 0 {name=x1
 schematic=mux8onehot_parax
 spice_sym_def="tcleval(.include [file normalize extracted/mux8onehot_parax.spice])"
 tclcommand="textwindow [file normalize extracted/mux8onehot_parax.spice]"

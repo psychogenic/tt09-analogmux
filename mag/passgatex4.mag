@@ -290,40 +290,40 @@ timestamp 1725640011
 transform 0 1 15452 -1 0 7826
 box 3356 -890 8072 137
 << labels >>
-flabel metal1 15044 4482 15244 4682 0 FreeSans 256 0 0 0 GP4
-port 14 nsew
-flabel metal1 14800 4482 15000 4682 0 FreeSans 256 0 0 0 GN4
-port 15 nsew
-flabel metal1 14010 4470 14210 4670 0 FreeSans 256 0 0 0 GP3
-port 10 nsew
-flabel metal1 13776 4470 13976 4670 0 FreeSans 256 0 0 0 GN3
-port 11 nsew
-flabel metal1 13542 4468 13742 4668 0 FreeSans 256 0 0 0 A3
-port 12 nsew
-flabel metal1 13552 -294 13752 -94 0 FreeSans 256 0 0 0 Z3
-port 13 nsew
-flabel metal1 12964 4476 13164 4676 0 FreeSans 256 0 0 0 GP2
-port 6 nsew
-flabel metal1 12730 4474 12930 4674 0 FreeSans 256 0 0 0 GN2
-port 7 nsew
-flabel metal1 12498 4472 12698 4672 0 FreeSans 256 0 0 0 A2
-port 8 nsew
+flabel metal1 11442 4474 11642 4674 0 FreeSans 256 0 0 0 A1
+port 0 nsew
+flabel metal1 11670 4474 11870 4674 0 FreeSans 256 0 0 0 GN1
+port 1 nsew
 flabel metal1 11908 4478 12108 4678 0 FreeSans 256 0 0 0 GP1
 port 2 nsew
-flabel metal1 11670 4474 11870 4674 0 FreeSans 256 0 0 0 GN1
-port 3 nsew
-flabel metal1 11442 4474 11642 4674 0 FreeSans 256 0 0 0 A1
-port 4 nsew
 flabel metal1 11414 -262 11614 -62 0 FreeSans 256 0 0 0 Z1
+port 3 nsew
+flabel metal1 12498 4472 12698 4672 0 FreeSans 256 0 0 0 A2
+port 4 nsew
+flabel metal1 12730 4474 12930 4674 0 FreeSans 256 0 0 0 GN2
 port 5 nsew
+flabel metal1 12964 4476 13164 4676 0 FreeSans 256 0 0 0 GP2
+port 6 nsew
 flabel metal1 12482 -258 12682 -58 0 FreeSans 256 0 0 0 Z2
+port 7 nsew
+flabel metal1 13542 4468 13742 4668 0 FreeSans 256 0 0 0 A3
+port 8 nsew
+flabel metal1 13776 4470 13976 4670 0 FreeSans 256 0 0 0 GN3
 port 9 nsew
-flabel metal1 11658 -356 11858 -156 0 FreeSans 256 0 0 0 VDD
-port 0 nsew
-flabel metal1 12224 4474 12424 4674 0 FreeSans 256 0 0 0 VSS
-port 1 nsew
+flabel metal1 14010 4470 14210 4670 0 FreeSans 256 0 0 0 GP3
+port 10 nsew
+flabel metal1 13552 -294 13752 -94 0 FreeSans 256 0 0 0 Z3
+port 11 nsew
 flabel metal1 14586 4502 14752 4664 0 FreeSans 640 0 0 0 A4
-port 16 nsew
+port 12 nsew
+flabel metal1 14800 4482 15000 4682 0 FreeSans 256 0 0 0 GN4
+port 13 nsew
+flabel metal1 15044 4482 15244 4682 0 FreeSans 256 0 0 0 GP4
+port 14 nsew
 flabel metal1 14610 -296 14810 -130 0 FreeSans 640 0 0 0 Z4
+port 15 nsew
+flabel metal1 11658 -356 11858 -156 0 FreeSans 256 0 0 0 VDD
+port 16 nsew
+flabel metal1 12224 4474 12424 4674 0 FreeSans 256 0 0 0 VSS
 port 17 nsew
 << end >>

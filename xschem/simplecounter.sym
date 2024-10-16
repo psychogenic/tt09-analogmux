@@ -3,7 +3,6 @@ v {xschem version=3.4.5 file_version=1.2
 G {}
 K {type=primitive
 format="@name @pinlist @symname"
-booya="VGND VPWR clk enable counter[0]  counter[1]  counter[2]  counter[3]  counter[4]  counter[5]  counter[6]  counter[7]  counter[8]  counter[9] "
 template="name=x1"
 }
 V {}
@@ -31,16 +30,16 @@ B 5 17.5 -32.5 22.5 -27.5 {name=VGND dir=in}
 B 5 17.5 -62.5 22.5 -57.5 {name=VPWR dir=in}
 B 5 17.5 -202.5 22.5 -197.5 {name=clk dir=in}
 B 5 17.5 -182.5 22.5 -177.5 {name=enable dir=in}
-B 5 177.5 -202.5 182.5 -197.5 {name=counter[0] dir=out}
-B 5 177.5 -182.5 182.5 -177.5 {name=counter[1] dir=out}
-B 5 177.5 -162.5 182.5 -157.5 {name=counter[2] dir=out}
-B 5 177.5 -142.5 182.5 -137.5 {name=counter[3] dir=out}
-B 5 177.5 -122.5 182.5 -117.5 {name=counter[4] dir=out}
-B 5 177.5 -102.5 182.5 -97.5 {name=counter[5] dir=out}
-B 5 177.5 -82.5 182.5 -77.5 {name=counter[6] dir=out}
-B 5 177.5 -62.5 182.5 -57.5 {name=counter[7] dir=out}
-B 5 177.5 -42.5 182.5 -37.5 {name=counter[8] dir=out}
 B 5 177.5 -22.5 182.5 -17.5 {name=counter[9] dir=out}
+B 5 177.5 -42.5 182.5 -37.5 {name=counter[8] dir=out}
+B 5 177.5 -62.5 182.5 -57.5 {name=counter[7] dir=out}
+B 5 177.5 -82.5 182.5 -77.5 {name=counter[6] dir=out}
+B 5 177.5 -102.5 182.5 -97.5 {name=counter[5] dir=out}
+B 5 177.5 -122.5 182.5 -117.5 {name=counter[4] dir=out}
+B 5 177.5 -142.5 182.5 -137.5 {name=counter[3] dir=out}
+B 5 177.5 -162.5 182.5 -157.5 {name=counter[2] dir=out}
+B 5 177.5 -182.5 182.5 -177.5 {name=counter[1] dir=out}
+B 5 177.5 -202.5 182.5 -197.5 {name=counter[0] dir=out}
 T {enable} 45 -184 0 0 0.2 0.2 {}
 T {clk} 45 -204 0 0 0.2 0.2 {}
 T {counter[0]} 155 -204 0 1 0.2 0.2 {}

@@ -69,7 +69,7 @@ N 1060 -90 1060 -80 {
 lab=A4}
 N 1140 -80 1170 -80 {
 lab=Z4}
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} -20 -90 0 0 {name=x1}
+C {passgate.sym} -20 -90 0 0 {name=x1}
 C {devices/ipin.sym} 10 -170 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 10 -140 0 0 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} 220 -40 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -78,21 +78,21 @@ C {devices/ipin.sym} 230 -170 0 0 {name=p5 lab=GP1}
 C {devices/ipin.sym} 240 -20 0 0 {name=p6 lab=GN1}
 C {devices/iopin.sym} 160 -100 2 0 {name=p7 lab=A1}
 C {devices/iopin.sym} 310 -90 0 0 {name=p8 lab=Z1}
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} 250 -90 0 0 {name=x2}
+C {passgate.sym} 250 -90 0 0 {name=x2}
 C {devices/lab_pin.sym} 490 -40 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 490 -140 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {devices/ipin.sym} 500 -170 0 0 {name=p11 lab=GP2}
 C {devices/ipin.sym} 510 -20 0 0 {name=p12 lab=GN2}
 C {devices/iopin.sym} 430 -100 2 0 {name=p13 lab=A2}
 C {devices/iopin.sym} 580 -90 0 0 {name=p14 lab=Z2}
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} 560 -90 0 0 {name=x3}
+C {passgate.sym} 560 -90 0 0 {name=x3}
 C {devices/lab_pin.sym} 800 -40 0 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 800 -140 0 0 {name=p16 sig_type=std_logic lab=VDD}
 C {devices/ipin.sym} 810 -170 0 0 {name=p17 lab=GP3}
 C {devices/ipin.sym} 820 -20 0 0 {name=p18 lab=GN3}
 C {devices/iopin.sym} 740 -100 2 0 {name=p19 lab=A3}
 C {devices/iopin.sym} 890 -90 0 0 {name=p20 lab=Z3}
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} 840 -80 0 0 {name=x4}
+C {passgate.sym} 840 -80 0 0 {name=x4}
 C {devices/lab_pin.sym} 1080 -30 0 0 {name=p21 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1080 -130 0 0 {name=p22 sig_type=std_logic lab=VDD}
 C {devices/ipin.sym} 1090 -160 0 0 {name=p23 lab=GP4}

@@ -277,7 +277,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_pin.sym} 790 -720 2 0 {name=p48 sig_type=std_logic lab=VSS}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot.sym} 550 -820 0 0 {name=x1
+C {mux4onehot.sym} 550 -820 0 0 {name=x1
 schematic=mux4onehot_parax
 spice_sym_def="tcleval(.include [file normalize extracted/mux4onehot_parax.spice])"
 tclcommand="textwindow [file normalize extracted/mux4onehot_parax.spice]"}
@@ -318,7 +318,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_pin.sym} 770 -200 2 0 {name=p20 sig_type=std_logic lab=VSS}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot.sym} 530 -300 0 0 {name=x2
+C {mux4onehot.sym} 530 -300 0 0 {name=x2
 schematic=mux4onehot_parax
 spice_sym_def="tcleval(.include [file normalize extracted/mux4onehot_parax.spice])"
 tclcommand="textwindow [file normalize extracted/mux4onehot_parax.spice]"}

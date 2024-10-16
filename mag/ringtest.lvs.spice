@@ -207,24 +207,24 @@ X1 a_35_118# a_n35_21# a_n93_118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2
 **devattr s=116000,4116 d=116000,4116
 .ends
 
-.subckt passgate Z A GP GN VSUBS VCCBPIN
-XXM1 GN Z VSUBS GN A A Z sky130_fd_pr__nfet_01v8_lvt_PEJ72P
-XXM3 GP Z GP Z A A VCCBPIN sky130_fd_pr__pfet_01v8_lvt_4QFMR3
+.subckt passgate A GN GP Z VSS VDD
+XXM1 GN Z VSS GN A A Z sky130_fd_pr__nfet_01v8_lvt_PEJ72P
+XXM3 GP Z GP Z A A VDD sky130_fd_pr__pfet_01v8_lvt_4QFMR3
 .ends
 
-.subckt passgatex4 VDD VSS GN1 A1 GP2 GN2 A2 Z2 GP3 GN3 A3 Z3 GP4 GN4 A4 Z4 GP1 Z1
-Xx1 Z1 A1 GP1 GN1 VSS VDD passgate
-Xx2 Z2 A2 GP2 GN2 VSS VDD passgate
-Xx3 Z3 A3 GP3 GN3 VSS VDD passgate
-Xx4 Z4 A4 GP4 GN4 VSS VDD passgate
+.subckt passgatex4 A1 GN1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 VSS GP1 Z1 VDD
+Xx1 A1 GN1 GP1 Z1 VSS VDD passgate
+Xx2 A2 GN2 GP2 Z2 VSS VDD passgate
+Xx3 A3 GN3 GP3 Z3 VSS VDD passgate
+Xx4 A4 GN4 GP4 Z4 VSS VDD passgate
 .ends
 
 .subckt mux4onehot_b select0 select1 select2 A1 A2 A3 A4 Z1 Z2 Z3 Z4 nselect2 VDD
 + VSS
 Xx1 select0 select1 select2 x2/GN1 x2/GP1 x2/GN2 x2/GP2 x2/GN3 x2/GP3 x2/GN4 x2/GP4
 + nselect2 VDD VSS passgatesCtrlManual
-Xx2 VDD VSS x2/GN1 A1 x2/GP2 x2/GN2 A2 Z2 x2/GP3 x2/GN3 A3 Z3 x2/GP4 x2/GN4 A4 Z4
-+ x2/GP1 Z1 passgatex4
+Xx2 A1 x2/GN1 A2 x2/GN2 x2/GP2 Z2 A3 x2/GN3 x2/GP3 Z3 A4 x2/GN4 x2/GP4 Z4 VSS x2/GP1
++ Z1 VDD passgatex4
 .ends
 
 .subckt sky130_ef_sc_hd__decap_12 VGND VPWR VPB VNB

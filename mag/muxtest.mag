@@ -318,35 +318,35 @@ use mux4onehot_b  x2
 timestamp 1728327329
 transform 1 0 7994 0 1 -7186
 box 4658 -8054 11287 -2405
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR1
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR1 std
 timestamp 1728357323
 transform 0 -1 14757 1 0 -2427
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR2
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR2 std
 timestamp 1728357323
 transform 0 -1 13799 1 0 -1815
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR3
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR3 std
 timestamp 1728357323
 transform 0 -1 12721 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR4
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR4 std
 timestamp 1728357323
 transform 0 -1 11731 1 0 -1803
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR5
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR5 std
 timestamp 1728357323
 transform 0 -1 10653 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR6
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR6 std
 timestamp 1728357323
 transform 0 -1 9733 1 0 -1803
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR7
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR7 std
 timestamp 1728357323
 transform 0 -1 8671 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR8
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR8 std
 timestamp 1728357323
 transform 0 -1 7811 1 0 -1827
 box -307 -757 307 757
@@ -378,6 +378,4 @@ flabel metal1 10156 -3084 10338 -2944 0 FreeSans 240 0 0 0 R4R5
 flabel metal1 9172 -3122 9354 -2982 0 FreeSans 240 0 0 0 R5R6
 flabel metal1 8718 -3170 8900 -3030 0 FreeSans 240 0 0 0 R6R7
 flabel metal1 7098 -2546 7280 -2406 0 FreeSans 240 0 0 0 R7R8
-flabel space 7146 -11618 7238 -11528 0 FreeSans 240 0 0 0 selhighnibble
-flabel space 6932 -9354 7024 -9264 0 FreeSans 240 0 0 0 sellownibble
 << end >>

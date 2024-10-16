@@ -234,7 +234,7 @@ N 500 345 510 345 {
 lab=OUTPX}
 N 510 345 510 375 {
 lab=OUTPX}
-C {/home/ttuser/work/tt09-analogmux/xschem/passgatex4.sym} 260 -20 0 0 {name=x1}
+C {passgatex4.sym} 260 -20 0 0 {name=x1}
 C {sky130_tests/not.sym} 160 -710 0 0 {name=x2 m=1 
 + W_N=1 L_N=0.15 W_P=2 L_P=0.15 
 + VCCPIN=VCC VSSPIN=VSS}
@@ -345,7 +345,7 @@ value=1
 footprint=1206
 device=resistor
 m=1}
-C {/home/ttuser/work/tt09-analogmux/xschem/passgatex4.sym} 270 365 0 0 {name=x6
+C {passgatex4.sym} 270 365 0 0 {name=x6
 schematic=passgatex4_parax
 spice_sym_def="tcleval(.include [file normalize extracted/passgatex4_parax.spice])"
 tclcommand="textwindow [file normalize extracted/passgatex4_parax.spice]"

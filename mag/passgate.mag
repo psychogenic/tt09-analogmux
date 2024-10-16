@@ -117,16 +117,16 @@ timestamp 1725636896
 transform 0 -1 5735 1 0 -157
 box -231 -2337 231 2337
 << labels >>
-flabel metal1 3684 -832 3884 -632 0 FreeSans 256 0 0 0 VSSBPIN
-port 4 nsew
-flabel metal1 3682 -604 3882 -404 0 FreeSans 256 0 0 0 GN
-port 3 nsew
-flabel metal1 7772 -842 7972 -642 0 FreeSans 256 0 0 0 Z
-port 0 nsew
-flabel metal1 7866 -598 8066 -398 0 FreeSans 256 0 0 0 VCCBPIN
-port 5 nsew
 flabel metal1 3434 -832 3634 -632 0 FreeSans 256 0 0 0 A
+port 0 nsew
+flabel metal1 3682 -604 3882 -404 0 FreeSans 256 0 0 0 GN
 port 1 nsew
 flabel metal1 3436 -604 3636 -404 0 FreeSans 256 0 0 0 GP
 port 2 nsew
+flabel metal1 7772 -842 7972 -642 0 FreeSans 256 0 0 0 Z
+port 3 nsew
+flabel metal1 7866 -598 8066 -398 0 FreeSans 256 0 0 0 VDD
+port 4 nsew
+flabel metal1 3684 -832 3884 -632 0 FreeSans 256 0 0 0 VSS
+port 5 nsew
 << end >>

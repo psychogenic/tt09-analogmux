@@ -143,7 +143,7 @@ C {devices/lab_pin.sym} 750 -1090 2 0 {name=p48 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 380 -1190 0 0 {name=p4 sig_type=std_logic lab=SEL1
 }
 C {devices/title.sym} 180 -40 0 0 {name=l1 author="Pat Deegan"}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/ringtest.sym} 550 -1160 0 0 {name=x1
+C {ringtest.sym} 550 -1160 0 0 {name=x1
 schematic=ringtest_parax
 spice_sym_def="tcleval(.include [file normalize extracted/ringtest_parax.spice])"
 tclcommand="textwindow [file normalize extracted/ringtest_parax.spice]"

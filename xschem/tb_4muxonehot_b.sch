@@ -324,12 +324,12 @@ C {devices/lab_pin.sym} 475 -490 0 0 {name=p22 sig_type=std_logic lab=SEL1
 }
 C {devices/lab_wire.sym} 770 -320 0 0 {name=p32 sig_type=std_logic lab=OUTMUXED}
 C {devices/title.sym} 180 -40 0 0 {name=l1 author="Pat Deegan"}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot_b.sym} 550 -820 0 0 {name=x1
+C {mux4onehot_b.sym} 550 -820 0 0 {name=x1
 schematic=mux4onehot_b_parax
 spice_sym_def="tcleval(.include [file normalize extracted/mux4onehot_b_parax.spice])"
 tclcommand="textwindow [file normalize extracted/mux4onehot_b_parax.spice]"
 }
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot_b.sym} 530 -300 0 0 {name=x2
+C {mux4onehot_b.sym} 530 -300 0 0 {name=x2
 schematic=mux4onehot_b_parax
 spice_sym_def="tcleval(.include [file normalize extracted/mux4onehot_b_parax.spice])"
 tclcommand="textwindow [file normalize extracted/mux4onehot_b_parax.spice]"

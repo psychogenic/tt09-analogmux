@@ -227,7 +227,7 @@ N 30 10 30 30 {
 lab=VSS}
 N 0 30 30 30 {
 lab=VSS}
-C {/home/ttuser/work/tt08-wowa2/xschem/passgatesCtrl.sym} -150 -40 0 0 {name=x1
+C {passgatesCtrl.sym} -150 -40 0 0 {name=x1
 schematic=passgatesctrl_parax
 spice_sym_def="tcleval(.include [file normalize extracted/passgatesCtrl_parax.spice])"
 tclcommand="textwindow [file normalize extracted/passgatesCtrl_parax.spice]"}

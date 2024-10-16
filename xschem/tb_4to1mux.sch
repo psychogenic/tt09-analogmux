@@ -256,7 +256,7 @@ value=1
 footprint=1206
 device=resistor
 m=1}
-C {/home/ttuser/work/tt09-analogmux/xschem/passgatex4.sym} 270 365 0 0 {name=x6
+C {passgatex4.sym} 270 365 0 0 {name=x6
 schematic=passgatex4_parax
 spice_sym_def="tcleval(.include [file normalize extracted/passgatex4_parax.spice])"
 tclcommand="textwindow [file normalize extracted/passgatex4_parax.spice]"
@@ -289,7 +289,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_pin.sym} 510 465 2 0 {name=p48 sig_type=std_logic lab=VSS}
-C {/home/ttuser/work/tt08-wowa2/xschem/passgatesCtrl.sym} -190 -40 0 0 {name=x7
+C {passgatesCtrl.sym} -190 -40 0 0 {name=x7
 schematic=passgatesctrl_parax
 spice_sym_def="tcleval(.include [file normalize extracted/passgatesCtrl_parax.spice])"
 tclcommand="textwindow [file normalize extracted/passgatesCtrl_parax.spice]"}

@@ -26,18 +26,18 @@ L 4 130 60 150 60 {}
 L 4 130 80 150 80 {}
 L 4 -150 50 -130 50 {}
 L 4 -150 70 -130 70 {}
-B 5 147.5 -82.5 152.5 -77.5 {name=gpo0 dir=out}
-B 5 147.5 -62.5 152.5 -57.5 {name=gno0 dir=out}
-B 5 147.5 -42.5 152.5 -37.5 {name=gno1 dir=out}
-B 5 147.5 -22.5 152.5 -17.5 {name=gpo1 dir=out}
 B 5 -152.5 -82.5 -147.5 -77.5 {name=SEL0 dir=in}
 B 5 -152.5 -62.5 -147.5 -57.5 {name=SEL1 dir=in}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=SEL2 dir=in}
+B 5 147.5 -62.5 152.5 -57.5 {name=gno0 dir=out}
+B 5 147.5 -82.5 152.5 -77.5 {name=gpo0 dir=out}
+B 5 147.5 -42.5 152.5 -37.5 {name=gno1 dir=out}
+B 5 147.5 -22.5 152.5 -17.5 {name=gpo1 dir=out}
 B 5 147.5 -2.5 152.5 2.5 {name=gno2 dir=out}
 B 5 147.5 17.5 152.5 22.5 {name=gpo2 dir=out}
-B 5 147.5 37.5 152.5 42.5 {name=nSEL2 dir=out}
-B 5 -152.5 -42.5 -147.5 -37.5 {name=SEL2 dir=in}
 B 5 147.5 57.5 152.5 62.5 {name=gno3 dir=out}
 B 5 147.5 77.5 152.5 82.5 {name=gpo3 dir=out}
+B 5 147.5 37.5 152.5 42.5 {name=nSEL2 dir=out}
 B 5 -152.5 47.5 -147.5 52.5 {name=VPWR dir=in}
 B 5 -152.5 67.5 -147.5 72.5 {name=VGND dir=in}
 T {@symname} -23.5 4 0 0 0.3 0.3 {}

@@ -8,9 +8,9 @@ E {}
 N 120 -60 120 -20 {
 lab=GN}
 N 120 -340 120 -330 {
-lab=VCCBPIN}
+lab=VDD}
 N 120 -110 120 -100 {
-lab=VSSBPIN}
+lab=VSS}
 N 60 -340 90 -340 {
 lab=A}
 N 60 -340 60 -100 {
@@ -60,8 +60,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ipin.sym} 120 -330 3 0 {name=p5 lab=VCCBPIN}
-C {devices/ipin.sym} 120 -110 1 0 {name=p6 lab=VSSBPIN}
+C {devices/ipin.sym} 120 -330 3 0 {name=p5 lab=VDD}
+C {devices/ipin.sym} 120 -110 1 0 {name=p6 lab=VSS}
 C {devices/ipin.sym} 110 -400 0 0 {name=p2 lab=GP}
 C {devices/iopin.sym} 30 -220 0 1 {name=p3 lab=A}
 C {devices/iopin.sym} 220 -220 0 0 {name=p4 lab=Z}

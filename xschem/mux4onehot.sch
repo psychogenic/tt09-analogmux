@@ -65,7 +65,7 @@ N 590 -250 610 -250 {
 lab=Z3}
 N 590 -230 610 -230 {
 lab=Z4}
-C {/home/ttuser/work/tt09-analogmux/xschem/passgatesCtrl.sym} 20 -160 0 0 {name=x1
+C {passgatesCtrl.sym} 20 -160 0 0 {name=x1
 type=primitive
 format="@name @pinlist @symname"
 }
@@ -103,4 +103,4 @@ C {devices/lab_pin.sym} 410 -410 2 1 {name=p31 lab=gno0}
 C {devices/lab_pin.sym} 340 -90 1 1 {name=p32 lab=gno1}
 C {devices/lab_pin.sym} 420 -90 1 1 {name=p33 lab=gno2}
 C {devices/lab_pin.sym} 500 -90 1 1 {name=p34 lab=gno3}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatex4.sym} 400 -210 0 0 {name=x2}
+C {passgatex4.sym} 400 -210 0 0 {name=x2}

@@ -26,20 +26,20 @@ L 7 130 -40 150 -40 {}
 L 7 130 60 150 60 {}
 L 7 130 -20 150 -20 {}
 L 7 130 80 150 80 {}
-B 5 -152.5 47.5 -147.5 52.5 {name=VDD dir=in}
-B 5 -152.5 67.5 -147.5 72.5 {name=VSS dir=in}
 B 5 -152.5 -32.5 -147.5 -27.5 {name=select0 dir=in}
 B 5 -152.5 -52.5 -147.5 -47.5 {name=select1 dir=in}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=select2 dir=in}
 B 5 147.5 -82.5 152.5 -77.5 {name=A1 dir=inout}
+B 5 147.5 -62.5 152.5 -57.5 {name=A2 dir=inout}
+B 5 147.5 -42.5 152.5 -37.5 {name=A3 dir=inout}
+B 5 147.5 -22.5 152.5 -17.5 {name=A4 dir=inout}
 B 5 147.5 -2.5 152.5 2.5 {name=A5 dir=inout}
 B 5 147.5 17.5 152.5 22.5 {name=A6 dir=inout}
-B 5 147.5 -62.5 152.5 -57.5 {name=A2 dir=inout}
 B 5 147.5 37.5 152.5 42.5 {name=A7 dir=inout}
-B 5 147.5 -42.5 152.5 -37.5 {name=A3 dir=inout}
-B 5 -152.5 -72.5 -147.5 -67.5 {name=select2 dir=in}
 B 5 147.5 57.5 152.5 62.5 {name=A8 dir=inout}
-B 5 147.5 -22.5 152.5 -17.5 {name=A4 dir=inout}
 B 5 147.5 77.5 152.5 82.5 {name=Z dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=VDD dir=in}
+B 5 -152.5 67.5 -147.5 72.5 {name=VSS dir=in}
 T {@symname} -63 -6 0 0 0.3 0.3 {}
 T {@name} 135 -102 0 0 0.2 0.2 {}
 T {VDD} -125 46 0 0 0.2 0.2 {}

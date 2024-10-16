@@ -90,7 +90,7 @@ N 335 145 335 155 {
 lab=OUT_PX}
 N 225 75 225 115 {
 lab=nEN}
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} -50 -110 0 0 {name=x1}
+C {passgate.sym} -50 -110 0 0 {name=x1}
 C {devices/vsource.sym} -405 5 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/lab_pin.sym} -405 -55 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 185 -160 0 0 {name=p2 sig_type=std_logic lab=VCC}
@@ -141,7 +141,7 @@ C {devices/launcher.sym} 1025 -30 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_passgate.raw tran"
 }
-C {/home/ttuser/tt08-wowa2/xschem/passgate.sym} -35 145 0 0 {name=x3
+C {passgate.sym} -35 145 0 0 {name=x3
 schematic=passgate_parax
 spice_sym_def="tcleval(.include [file normalize extracted/passgate_parax.spice])"
 tclcommand="textwindow [file normalize extracted/passgate_parax.spice]"}

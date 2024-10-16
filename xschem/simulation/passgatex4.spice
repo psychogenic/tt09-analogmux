@@ -1,10 +1,10 @@
-** sch_path: /home/ttuser/work/tt09-analogmux/xschem/passgatex4.sch
-.subckt passgatex4 GP3 GP2 GP1 VCC GP4 VSS A3 A2 A1 Z3 Z1 Z2 A4 Z4 GN3 GN2 GN1 GN4
-*.PININFO VCC:I VSS:I GP1:I GN1:I A1:B Z1:B GP2:I GN2:I A2:B Z2:B GP3:I GN3:I A3:B Z3:B GP4:I GN4:I A4:B Z4:B
-x1 Z1 A1 GP1 GN1 VSS VCC passgate
-x2 Z2 A2 GP2 GN2 VSS VCC passgate
-x3 Z3 A3 GP3 GN3 VSS VCC passgate
-x4 Z4 A4 GP4 GN4 VSS VCC passgate
+** sch_path: /home/ttuser/vmswap/tt09-analogmux/xschem/passgatex4.sch
+.subckt passgatex4 A1 GN1 GP1 Z1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 VDD VSS
+*.PININFO VDD:I VSS:I GP1:I GN1:I A1:B Z1:B GP2:I GN2:I A2:B Z2:B GP3:I GN3:I A3:B Z3:B GP4:I GN4:I A4:B Z4:B
+x1 Z1 A1 GP1 GN1 VSS VDD passgate
+x2 Z2 A2 GP2 GN2 VSS VDD passgate
+x3 Z3 A3 GP3 GN3 VSS VDD passgate
+x4 Z4 A4 GP4 GN4 VSS VDD passgate
 .ends
 
 * expanding   symbol:  /home/ttuser/tt08-wowa2/xschem/passgate.sym # of pins=6

@@ -65,8 +65,8 @@ C {devices/lab_pin.sym} 410 -320 2 1 {name=p28 lab=gno3}
 C {devices/lab_pin.sym} 610 -400 2 0 {name=p29 lab=VDD}
 C {devices/lab_pin.sym} 610 -380 2 0 {name=p30 lab=VSS}
 C {devices/lab_pin.sym} 410 -410 2 1 {name=p31 lab=gno0}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatex4.sym} 400 -210 0 0 {name=x2}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatesCtrlManual.sym} 1040 -110 0 0 {name=x1}
+C {passgatex4.sym} 400 -210 0 0 {name=x2}
+C {passgatesCtrlManual.sym} 1040 -110 0 0 {name=x1}
 C {devices/lab_pin.sym} 1190 -190 0 1 {name=p39 lab=gpo0}
 C {devices/lab_pin.sym} 1190 -170 0 1 {name=p40 lab=gno0}
 C {devices/lab_pin.sym} 1190 -150 0 1 {name=p41 lab=gno1}

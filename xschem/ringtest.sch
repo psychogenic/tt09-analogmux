@@ -76,7 +76,7 @@ C {devices/ipin.sym} 280 -380 0 0 {name=p16 lab=select0}
 C {devices/ipin.sym} 280 -360 0 0 {name=p17 lab=select1}
 C {devices/ipin.sym} 130 -270 0 0 {name=p24 lab=enable_counter}
 C {devices/opin.sym} 280 -320 0 0 {name=p29 lab=mux_out}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/mux4onehot_b.sym} 820 -70 0 0 {name=x3}
+C {mux4onehot_b.sym} 820 -70 0 0 {name=x3}
 C {devices/lab_wire.sym} 540 -180 0 0 {name=p1 sig_type=std_logic lab=ring_out}
 C {devices/lab_pin.sym} 810 -150 0 0 {name=p2 sig_type=std_logic lab=ring_out}
 C {devices/lab_pin.sym} 540 -110 2 0 {name=p3 sig_type=std_logic lab=drv_out
@@ -107,6 +107,6 @@ C {devices/lab_pin.sym} 810 -110 0 0 {name=p27 sig_type=std_logic lab=counter3
 C {devices/lab_pin.sym} 810 -90 0 0 {name=p28 sig_type=std_logic lab=counter7
 }
 C {devices/lab_pin.sym} 1060 -150 2 0 {name=p30 sig_type=std_logic lab=mux_out}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/simplecounter.sym} 500 -480 0 0 {name=x4}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/ring.sym} 360 -230 0 0 {name=x1}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/driver.sym} 360 -130 0 0 {name=x2}
+C {simplecounter.sym} 500 -480 0 0 {name=x4}
+C {ring.sym} 360 -230 0 0 {name=x1}
+C {driver.sym} 360 -130 0 0 {name=x2}

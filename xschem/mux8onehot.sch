@@ -5,169 +5,169 @@ K {}
 V {}
 S {}
 E {}
-N 1250 -220 1270 -220 {
+N 460 -170 480 -170 {
 lab=OUT_HIGH}
-N 1290 -190 1290 -170 {
+N 500 -140 500 -120 {
 lab=VSS}
-N 1290 -270 1290 -250 {
+N 500 -220 500 -200 {
 lab=VDD}
-N 1310 -190 1310 -140 {
+N 520 -140 520 -90 {
 lab=select2}
-N 1310 -280 1310 -250 {
+N 520 -230 520 -200 {
 lab=nSEL2}
-N 1350 -220 1380 -220 {
+N 560 -170 590 -170 {
 lab=Z}
-N 1600 -220 1620 -220 {
+N 810 -170 830 -170 {
 lab=OUT_LOW}
-N 1640 -190 1640 -170 {
+N 850 -140 850 -120 {
 lab=VSS}
-N 1640 -270 1640 -250 {
+N 850 -220 850 -200 {
 lab=VDD}
-N 1660 -190 1660 -140 {
+N 870 -140 870 -90 {
 lab=nSEL2}
-N 1660 -280 1660 -250 {
+N 870 -230 870 -200 {
 lab=select2}
-N 1700 -220 1730 -220 {
+N 910 -170 940 -170 {
 lab=Z}
-N 1140 -680 1150 -680 {
+N 350 -630 360 -630 {
 lab=gno0}
-N 1090 -670 1150 -670 {
+N 300 -620 360 -620 {
 lab=gpo0}
-N 1140 -650 1150 -650 {
+N 350 -600 360 -600 {
 lab=gno1}
-N 1090 -640 1150 -640 {
+N 300 -590 360 -590 {
 lab=gpo1}
-N 1140 -620 1150 -620 {
+N 350 -570 360 -570 {
 lab=gno2}
-N 1090 -610 1150 -610 {
+N 300 -560 360 -560 {
 lab=gpo2}
-N 1140 -590 1150 -590 {
+N 350 -540 360 -540 {
 lab=gno3}
-N 1090 -580 1150 -580 {
+N 300 -530 360 -530 {
 lab=gpo3}
-N 1320 -670 1340 -670 {
+N 530 -620 550 -620 {
 lab=VDD}
-N 1320 -650 1340 -650 {
+N 530 -600 550 -600 {
 lab=VSS}
-N 1130 -560 1150 -560 {
+N 340 -510 360 -510 {
 lab=A1}
-N 1130 -540 1150 -540 {
+N 340 -490 360 -490 {
 lab=A2}
-N 1130 -520 1150 -520 {
+N 340 -470 360 -470 {
 lab=A3}
-N 1130 -500 1150 -500 {
+N 340 -450 360 -450 {
 lab=A4}
-N 1320 -560 1370 -560 {
+N 530 -510 580 -510 {
 lab=OUT_LOW}
-N 1360 -560 1360 -500 {
+N 570 -510 570 -450 {
 lab=OUT_LOW}
-N 1320 -500 1360 -500 {
+N 530 -450 570 -450 {
 lab=OUT_LOW}
-N 1320 -520 1360 -520 {
+N 530 -470 570 -470 {
 lab=OUT_LOW}
-N 1320 -540 1360 -540 {
+N 530 -490 570 -490 {
 lab=OUT_LOW}
-N 1600 -680 1610 -680 {
+N 810 -630 820 -630 {
 lab=gno0}
-N 1550 -670 1610 -670 {
+N 760 -620 820 -620 {
 lab=gpo0}
-N 1600 -650 1610 -650 {
+N 810 -600 820 -600 {
 lab=gno1}
-N 1550 -640 1610 -640 {
+N 760 -590 820 -590 {
 lab=gpo1}
-N 1600 -620 1610 -620 {
+N 810 -570 820 -570 {
 lab=gno2}
-N 1550 -610 1610 -610 {
+N 760 -560 820 -560 {
 lab=gpo2}
-N 1600 -590 1610 -590 {
+N 810 -540 820 -540 {
 lab=gno3}
-N 1550 -580 1610 -580 {
+N 760 -530 820 -530 {
 lab=gpo3}
-N 1780 -670 1800 -670 {
+N 990 -620 1010 -620 {
 lab=VDD}
-N 1780 -650 1800 -650 {
+N 990 -600 1010 -600 {
 lab=VSS}
-N 1780 -560 1830 -560 {
+N 990 -510 1040 -510 {
 lab=OUT_HIGH}
-N 1820 -560 1820 -500 {
+N 1030 -510 1030 -450 {
 lab=OUT_HIGH}
-N 1780 -500 1820 -500 {
+N 990 -450 1030 -450 {
 lab=OUT_HIGH}
-N 1780 -520 1820 -520 {
+N 990 -470 1030 -470 {
 lab=OUT_HIGH}
-N 1780 -540 1820 -540 {
+N 990 -490 1030 -490 {
 lab=OUT_HIGH}
-N 1590 -560 1610 -560 {
+N 800 -510 820 -510 {
 lab=A5}
-N 1590 -540 1610 -540 {
+N 800 -490 820 -490 {
 lab=A6}
-N 1590 -520 1610 -520 {
+N 800 -470 820 -470 {
 lab=A7}
-N 1590 -500 1610 -500 {
+N 800 -450 820 -450 {
 lab=A8}
 C {devices/ipin.sym} 120 -580 0 0 {name=p11 lab=select0}
 C {devices/ipin.sym} 120 -560 0 0 {name=p12 lab=select1}
 C {devices/ipin.sym} 120 -510 0 0 {name=p35 lab=select2}
 C {devices/ipin.sym} 120 -660 0 0 {name=p2 lab=VDD}
 C {devices/ipin.sym} 120 -640 0 0 {name=p1 lab=VSS}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgate.sym} 1050 -220 0 0 {name=x4}
-C {devices/lab_pin.sym} 1250 -220 2 1 {name=p9 lab=OUT_HIGH}
-C {devices/lab_pin.sym} 1290 -170 2 1 {name=p10 lab=VSS}
-C {devices/lab_pin.sym} 1290 -270 2 1 {name=p22 lab=VDD}
-C {devices/lab_pin.sym} 1310 -140 2 1 {name=p23 lab=select2}
-C {devices/lab_pin.sym} 1310 -280 0 1 {name=p24 lab=nSEL2}
-C {devices/iopin.sym} 1380 -220 0 0 {name=p25 lab=Z}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgate.sym} 1400 -220 0 0 {name=x5}
-C {devices/lab_pin.sym} 1600 -220 2 1 {name=p27 lab=OUT_LOW}
-C {devices/lab_pin.sym} 1640 -170 2 1 {name=p33 lab=VSS}
-C {devices/lab_pin.sym} 1640 -270 2 1 {name=p34 lab=VDD}
-C {devices/lab_pin.sym} 1660 -280 0 1 {name=p36 lab=select2}
-C {devices/lab_pin.sym} 1660 -140 0 1 {name=p37 lab=nSEL2}
-C {devices/lab_pin.sym} 1730 -220 0 1 {name=p38 lab=Z}
-C {devices/iopin.sym} 1130 -560 2 0 {name=p39 lab=A1}
-C {devices/iopin.sym} 1130 -540 2 0 {name=p40 lab=A2}
-C {devices/iopin.sym} 1130 -520 2 0 {name=p41 lab=A3}
-C {devices/iopin.sym} 1130 -500 2 0 {name=p42 lab=A4}
-C {devices/lab_pin.sym} 1140 -620 2 1 {name=p47 lab=gno2}
-C {devices/lab_pin.sym} 1090 -670 2 1 {name=p48 lab=gpo0}
-C {devices/lab_pin.sym} 1090 -640 2 1 {name=p49 lab=gpo1}
-C {devices/lab_pin.sym} 1090 -610 2 1 {name=p50 lab=gpo2}
-C {devices/lab_pin.sym} 1090 -580 2 1 {name=p51 lab=gpo3}
-C {devices/lab_pin.sym} 1140 -650 2 1 {name=p52 lab=gno1}
-C {devices/lab_pin.sym} 1140 -590 2 1 {name=p53 lab=gno3}
-C {devices/lab_pin.sym} 1340 -670 2 0 {name=p54 lab=VDD}
-C {devices/lab_pin.sym} 1340 -650 2 0 {name=p55 lab=VSS}
-C {devices/lab_pin.sym} 1140 -680 2 1 {name=p56 lab=gno0}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatex4.sym} 1130 -480 0 0 {name=x2}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatesCtrlManual.sym} 1220 -840 0 0 {name=x1}
-C {devices/lab_pin.sym} 1370 -920 0 1 {name=p57 lab=gpo0}
-C {devices/lab_pin.sym} 1370 -900 0 1 {name=p58 lab=gno0}
-C {devices/lab_pin.sym} 1370 -880 0 1 {name=p59 lab=gno1}
-C {devices/lab_pin.sym} 1370 -860 0 1 {name=p60 lab=gpo1}
-C {devices/lab_pin.sym} 1070 -920 0 0 {name=p61 lab=select0}
-C {devices/lab_pin.sym} 1070 -900 0 0 {name=p62 lab=select1}
-C {devices/lab_pin.sym} 1370 -840 0 1 {name=p63 lab=gno2}
-C {devices/lab_pin.sym} 1370 -820 0 1 {name=p64 lab=gpo2}
-C {devices/lab_pin.sym} 1370 -800 0 1 {name=p65 lab=nSEL2}
-C {devices/lab_pin.sym} 1070 -880 0 0 {name=p66 lab=select2}
-C {devices/lab_pin.sym} 1370 -780 0 1 {name=p67 lab=gno3}
-C {devices/lab_pin.sym} 1370 -760 0 1 {name=p68 lab=gpo3}
-C {devices/lab_pin.sym} 1070 -790 0 0 {name=p69 lab=VDD}
-C {devices/lab_pin.sym} 1070 -770 0 0 {name=p70 lab=VSS}
-C {devices/lab_pin.sym} 1370 -560 0 1 {name=p43 lab=OUT_LOW}
-C {devices/lab_pin.sym} 1600 -620 2 1 {name=p72 lab=gno2}
-C {devices/lab_pin.sym} 1550 -670 2 1 {name=p73 lab=gpo0}
-C {devices/lab_pin.sym} 1550 -640 2 1 {name=p74 lab=gpo1}
-C {devices/lab_pin.sym} 1550 -610 2 1 {name=p75 lab=gpo2}
-C {devices/lab_pin.sym} 1550 -580 2 1 {name=p76 lab=gpo3}
-C {devices/lab_pin.sym} 1600 -650 2 1 {name=p77 lab=gno1}
-C {devices/lab_pin.sym} 1600 -590 2 1 {name=p78 lab=gno3}
-C {devices/lab_pin.sym} 1800 -670 2 0 {name=p79 lab=VDD}
-C {devices/lab_pin.sym} 1800 -650 2 0 {name=p80 lab=VSS}
-C {devices/lab_pin.sym} 1600 -680 2 1 {name=p81 lab=gno0}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/passgatex4.sym} 1590 -480 0 0 {name=x3}
-C {devices/iopin.sym} 1590 -560 2 0 {name=p44 lab=A5}
-C {devices/iopin.sym} 1590 -540 2 0 {name=p45 lab=A6}
-C {devices/iopin.sym} 1590 -520 2 0 {name=p46 lab=A7}
-C {devices/iopin.sym} 1590 -500 2 0 {name=p71 lab=A8}
-C {devices/lab_pin.sym} 1830 -560 0 1 {name=p3 lab=OUT_HIGH}
+C {passgate.sym} 260 -170 0 0 {name=x4}
+C {devices/lab_pin.sym} 460 -170 2 1 {name=p9 lab=OUT_HIGH}
+C {devices/lab_pin.sym} 500 -120 2 1 {name=p10 lab=VSS}
+C {devices/lab_pin.sym} 500 -220 2 1 {name=p22 lab=VDD}
+C {devices/lab_pin.sym} 520 -90 2 1 {name=p23 lab=select2}
+C {devices/lab_pin.sym} 520 -230 0 1 {name=p24 lab=nSEL2}
+C {devices/iopin.sym} 590 -170 0 0 {name=p25 lab=Z}
+C {passgate.sym} 610 -170 0 0 {name=x5}
+C {devices/lab_pin.sym} 810 -170 2 1 {name=p27 lab=OUT_LOW}
+C {devices/lab_pin.sym} 850 -120 2 1 {name=p33 lab=VSS}
+C {devices/lab_pin.sym} 850 -220 2 1 {name=p34 lab=VDD}
+C {devices/lab_pin.sym} 870 -230 0 1 {name=p36 lab=select2}
+C {devices/lab_pin.sym} 870 -90 0 1 {name=p37 lab=nSEL2}
+C {devices/lab_pin.sym} 940 -170 0 1 {name=p38 lab=Z}
+C {devices/iopin.sym} 340 -510 2 0 {name=p39 lab=A1}
+C {devices/iopin.sym} 340 -490 2 0 {name=p40 lab=A2}
+C {devices/iopin.sym} 340 -470 2 0 {name=p41 lab=A3}
+C {devices/iopin.sym} 340 -450 2 0 {name=p42 lab=A4}
+C {devices/lab_pin.sym} 350 -570 2 1 {name=p47 lab=gno2}
+C {devices/lab_pin.sym} 300 -620 2 1 {name=p48 lab=gpo0}
+C {devices/lab_pin.sym} 300 -590 2 1 {name=p49 lab=gpo1}
+C {devices/lab_pin.sym} 300 -560 2 1 {name=p50 lab=gpo2}
+C {devices/lab_pin.sym} 300 -530 2 1 {name=p51 lab=gpo3}
+C {devices/lab_pin.sym} 350 -600 2 1 {name=p52 lab=gno1}
+C {devices/lab_pin.sym} 350 -540 2 1 {name=p53 lab=gno3}
+C {devices/lab_pin.sym} 550 -620 2 0 {name=p54 lab=VDD}
+C {devices/lab_pin.sym} 550 -600 2 0 {name=p55 lab=VSS}
+C {devices/lab_pin.sym} 350 -630 2 1 {name=p56 lab=gno0}
+C {passgatex4.sym} 340 -430 0 0 {name=x2}
+C {passgatesCtrlManual.sym} 430 -790 0 0 {name=x1}
+C {devices/lab_pin.sym} 580 -870 0 1 {name=p57 lab=gpo0}
+C {devices/lab_pin.sym} 580 -850 0 1 {name=p58 lab=gno0}
+C {devices/lab_pin.sym} 580 -830 0 1 {name=p59 lab=gno1}
+C {devices/lab_pin.sym} 580 -810 0 1 {name=p60 lab=gpo1}
+C {devices/lab_pin.sym} 280 -870 0 0 {name=p61 lab=select0}
+C {devices/lab_pin.sym} 280 -850 0 0 {name=p62 lab=select1}
+C {devices/lab_pin.sym} 580 -790 0 1 {name=p63 lab=gno2}
+C {devices/lab_pin.sym} 580 -770 0 1 {name=p64 lab=gpo2}
+C {devices/lab_pin.sym} 580 -750 0 1 {name=p65 lab=nSEL2}
+C {devices/lab_pin.sym} 280 -830 0 0 {name=p66 lab=select2}
+C {devices/lab_pin.sym} 580 -730 0 1 {name=p67 lab=gno3}
+C {devices/lab_pin.sym} 580 -710 0 1 {name=p68 lab=gpo3}
+C {devices/lab_pin.sym} 280 -740 0 0 {name=p69 lab=VDD}
+C {devices/lab_pin.sym} 280 -720 0 0 {name=p70 lab=VSS}
+C {devices/lab_pin.sym} 580 -510 0 1 {name=p43 lab=OUT_LOW}
+C {devices/lab_pin.sym} 810 -570 2 1 {name=p72 lab=gno2}
+C {devices/lab_pin.sym} 760 -620 2 1 {name=p73 lab=gpo0}
+C {devices/lab_pin.sym} 760 -590 2 1 {name=p74 lab=gpo1}
+C {devices/lab_pin.sym} 760 -560 2 1 {name=p75 lab=gpo2}
+C {devices/lab_pin.sym} 760 -530 2 1 {name=p76 lab=gpo3}
+C {devices/lab_pin.sym} 810 -600 2 1 {name=p77 lab=gno1}
+C {devices/lab_pin.sym} 810 -540 2 1 {name=p78 lab=gno3}
+C {devices/lab_pin.sym} 1010 -620 2 0 {name=p79 lab=VDD}
+C {devices/lab_pin.sym} 1010 -600 2 0 {name=p80 lab=VSS}
+C {devices/lab_pin.sym} 810 -630 2 1 {name=p81 lab=gno0}
+C {passgatex4.sym} 800 -430 0 0 {name=x3}
+C {devices/iopin.sym} 800 -510 2 0 {name=p44 lab=A5}
+C {devices/iopin.sym} 800 -490 2 0 {name=p45 lab=A6}
+C {devices/iopin.sym} 800 -470 2 0 {name=p46 lab=A7}
+C {devices/iopin.sym} 800 -450 2 0 {name=p71 lab=A8}
+C {devices/lab_pin.sym} 1040 -510 0 1 {name=p3 lab=OUT_HIGH}

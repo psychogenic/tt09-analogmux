@@ -5,8 +5,8 @@ K {}
 V {}
 S {}
 E {}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/muxtest.sym} 220 -140 0 0 {name=x1}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/ringtest.sym} 230 -360 0 0 {name=x2}
+C {muxtest.sym} 220 -140 0 0 {name=x1}
+C {ringtest.sym} 230 -360 0 0 {name=x2}
 C {devices/lab_pin.sym} 80 -410 0 0 {name=p1 lab=select0}
 C {devices/lab_pin.sym} 80 -330 0 0 {name=p2 lab=VDD}
 C {devices/lab_pin.sym} 80 -390 0 0 {name=p3 lab=select1}

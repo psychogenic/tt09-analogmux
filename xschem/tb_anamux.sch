@@ -55,7 +55,7 @@ N 770 -350 790 -350 {
 lab=SEL0}
 N 770 -330 790 -330 {
 lab=SEL1}
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/tt_um_patdeegan_anamux.sym} 940 -420 0 0 {name=x1
+C {tt_um_patdeegan_anamux.sym} 940 -420 0 0 {name=x1
 schematic=tt_um_patdeegan_anamux_parax
 spice_sym_def="tcleval(.include [file normalize extracted/tt_um_patdeegan_anamux_parax.spice])"
 tclcommand="textwindow [file normalize extracted/tt_um_patdeegan_anamux_parax.spice]"
