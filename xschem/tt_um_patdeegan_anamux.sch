@@ -5,6 +5,21 @@ K {}
 V {}
 S {}
 E {}
+T {Muxtest out (ua[2]) selection, depends on select[1:0]:
+  * 0: the resistor ladder mux (ladderout)
+  * 1: the resistor src VRES, through only this mux 
+  * 2: A5 point, between R3 and R4
+  * 3: A1 point, on top of last R in chain above GND (R8)} 880 -190 0 0 0.3 0.3 {}
+T {Ladderout (ua[3]) is always the output from the inner 
+8:1 MUX (two stages) and depends on rsel[2:0]:
+ * 0-6 increasing voltage in Rdiv
+ * 7: the top VRES itself} 800 -50 0 0 0.3 0.3 {}
+T {ring_out (ua[1]) is a 4:1 mux, depending on select[1:0] and will be:
+ * 0: raw ring oscillator output
+ * 1: the buffered ring osc output (through driver)
+ * 2: the output of the counter bit[3]
+ * 3: the output of the counter bit[7]} 980 -320 0 0 0.3 0.3 {}
+T {VRES (ua[0]) is an input, the V on top of the monitored resistor ladder.} 880 -390 0 0 0.3 0.3 {}
 N 440 -620 480 -620 {
 lab=uio_out[0]}
 N 440 -620 440 -470 {
@@ -134,3 +149,4 @@ C {devices/lab_pin.sym} 550 -230 0 0 {name=p66 lab=ui_in[5]}
 C {devices/lab_pin.sym} 440 -450 0 0 {name=p47 lab=VSS}
 C {devices/lab_pin.sym} 460 -650 0 0 {name=p67 lab=VSS}
 C {devices/lab_pin.sym} 780 -610 0 0 {name=p68 lab=VSS}
+C {devices/iopin.sym} 70 -100 0 0 {name=p69 lab=ua[7]}

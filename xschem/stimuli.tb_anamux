@@ -3,7 +3,7 @@ voltage VCC
 slope 1
 format hspice_simple
 
-param eval 20
+param eval 10
 
 beginfile stimuli_tb_anamux.cir
 set vss 0
@@ -13,12 +13,17 @@ set rsel0 0
 set rsel1 0
 set rsel2 0
 set sel0 0
-set sel1 0
+set sel1 1
 set en_counter 1
 set en_ring 1
-s eval*2
-
+s 80
+set sel1 0
+set sel0 1
+s eval
+set sel0 0
+s eval
 set rsel0 1
+set rsel1 0
 s eval
 set rsel0 0
 set rsel1 1

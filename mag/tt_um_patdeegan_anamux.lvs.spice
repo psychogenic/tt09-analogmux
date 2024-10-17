@@ -1,4 +1,4 @@
-* NGSPICE file created from ringtest.ext - technology: sky130A
+* NGSPICE file created from tt_um_patdeegan_anamux.ext - technology: sky130A
 
 .subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
 X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
@@ -9,6 +9,131 @@ X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.
 **devattr s=6760,364 d=3510,184
 X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
 **devattr s=5400,254 d=10400,504
+.ends
+
+.subckt sky130_fd_sc_hd__and2_1 A B VGND VNB VPB VPWR X
+X0 VPWR B a_59_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.102877 pd=0.95413 as=0.0567 ps=0.69 w=0.42 l=0.15
+**devattr s=2268,138 d=6662,278
+X1 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.475 pd=2.95 as=0.244946 ps=2.271739 w=1 l=0.15
+**devattr s=6662,278 d=19000,590
+X2 VGND B a_145_75# VNB sky130_fd_pr__nfet_01v8 ad=0.087768 pd=0.816449 as=0.0567 ps=0.69 w=0.42 l=0.15
+**devattr s=2268,138 d=4472,208
+X3 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.102877 ps=0.95413 w=0.42 l=0.15
+**devattr s=4704,280 d=2268,138
+X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.135832 ps=1.263551 w=0.65 l=0.15
+**devattr s=4472,208 d=7280,372
+X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
+**devattr s=4704,280 d=2268,138
+.ends
+
+.subckt sky130_fd_sc_hd__and2b_1 A_N B VGND VNB VPB VPWR X
+X0 VPWR B a_207_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.111244 pd=0.929204 as=0.0609 ps=0.71 w=0.42 l=0.15
+**devattr s=2436,142 d=9116,348
+X1 X a_207_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.264867 ps=2.212389 w=1 l=0.15
+**devattr s=9116,348 d=10400,504
+X2 a_297_47# a_27_413# a_207_413# VNB sky130_fd_pr__nfet_01v8 ad=0.0504 pd=0.66 as=0.1092 ps=1.36 w=0.42 l=0.15
+**devattr s=4368,272 d=2016,132
+X3 X a_207_413# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.13602 ps=1.457047 w=0.65 l=0.15
+**devattr s=4052,198 d=6760,364
+X4 a_207_413# a_27_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0609 pd=0.71 as=0.111244 ps=0.929204 w=0.42 l=0.15
+**devattr s=2856,152 d=2436,142
+X5 VPWR A_N a_27_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.111244 pd=0.929204 as=0.1092 ps=1.36 w=0.42 l=0.15
+**devattr s=4368,272 d=2856,152
+X6 VGND B a_297_47# VNB sky130_fd_pr__nfet_01v8 ad=0.08789 pd=0.941476 as=0.0504 ps=0.66 w=0.42 l=0.15
+**devattr s=2016,132 d=4052,198
+X7 a_27_413# A_N VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.08789 ps=0.941476 w=0.42 l=0.15
+**devattr s=4368,272 d=4368,272
+.ends
+
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.2262 pd=2.26 as=0.2262 ps=2.26 w=0.87 l=1.05
+**devattr d=9048,452
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.143 ps=1.62 w=0.55 l=1.05
+**devattr d=5720,324
+.ends
+
+.subckt passgatesCtrlManual SEL0 SEL1 SEL2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3
++ nSEL2 VPWR VGND
+Xx1 SEL0 VGND VGND VPWR VPWR nSEL0 sky130_fd_sc_hd__inv_2
+Xx2 SEL1 VGND VGND VPWR VPWR nSEL1 sky130_fd_sc_hd__inv_2
+Xx7 nSEL0 nSEL1 VGND VGND VPWR VPWR gno0 sky130_fd_sc_hd__and2_1
+Xx8 SEL1 SEL0 VGND VGND VPWR VPWR gno1 sky130_fd_sc_hd__and2b_1
+Xx9 SEL0 SEL1 VGND VGND VPWR VPWR gno2 sky130_fd_sc_hd__and2b_1
+Xx10 SEL1 SEL0 VGND VGND VPWR VPWR gno3 sky130_fd_sc_hd__and2_1
+Xx11 gno0 VGND VGND VPWR VPWR gpo0 sky130_fd_sc_hd__inv_2
+Xx12 gno1 VGND VGND VPWR VPWR gpo1 sky130_fd_sc_hd__inv_2
+Xx13 gno2 VGND VGND VPWR VPWR gpo2 sky130_fd_sc_hd__inv_2
+Xx15 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx14 gno3 VGND VGND VPWR VPWR gpo3 sky130_fd_sc_hd__inv_2
+Xx16 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx17 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xx18 SEL2 VGND VGND VPWR VPWR nSEL2 sky130_fd_sc_hd__inv_2
+Xx19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_PEJ72P a_n35_21# a_35_109# a_n195_n1883# a_n35_n1797#
++ a_n93_n1709# a_n93_109# a_35_n1709#
+X0 a_35_n1709# a_n35_n1797# a_n93_n1709# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
+**devattr s=92800,3316 d=92800,3316
+X1 a_35_109# a_n35_21# a_n93_109# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
+**devattr s=92800,3316 d=92800,3316
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_4QFMR3 a_n35_21# a_n93_118# a_n35_n2215# a_n93_n2118#
++ a_35_118# a_35_n2118# w_n231_n2337#
+X0 a_35_n2118# a_n35_n2215# a_n93_n2118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
+**devattr s=116000,4116 d=116000,4116
+X1 a_35_118# a_n35_21# a_n93_118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
+**devattr s=116000,4116 d=116000,4116
+.ends
+
+.subckt passgate A GN GP Z VSS VDD
+XXM1 GN Z VSS GN A A Z sky130_fd_pr__nfet_01v8_lvt_PEJ72P
+XXM3 GP Z GP Z A A VDD sky130_fd_pr__pfet_01v8_lvt_4QFMR3
+.ends
+
+.subckt passgatex4 A1 GN1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 GP1 Z1 VSS VDD
+Xx1 A1 GN1 GP1 Z1 VSS VDD passgate
+Xx2 A2 GN2 GP2 Z2 VSS VDD passgate
+Xx3 A3 GN3 GP3 Z3 VSS VDD passgate
+Xx4 A4 GN4 GP4 Z4 VSS VDD passgate
+.ends
+
+.subckt mux8onehot select0 select1 select2 A1 A2 A3 A4 A5 A6 A7 A8 Z VDD VSS
+Xx1 select0 select1 select2 x3/GN1 x3/GP1 x3/GN2 x3/GP2 x3/GN3 x3/GP3 x3/GN4 x3/GP4
++ x5/GN VDD VSS passgatesCtrlManual
+Xx2 A1 x3/GN1 A2 x3/GN2 x3/GP2 x5/A A3 x3/GN3 x3/GP3 x5/A A4 x3/GN4 x3/GP4 x5/A x3/GP1
++ x5/A VSS VDD passgatex4
+Xx3 A5 x3/GN1 A6 x3/GN2 x3/GP2 x4/A A7 x3/GN3 x3/GP3 x4/A A8 x3/GN4 x3/GP4 x4/A x3/GP1
++ x4/A VSS VDD passgatex4
+Xx4 x4/A select2 x5/GN Z VSS VDD passgate
+Xx5 x5/A x5/GN select2 Z VSS VDD passgate
+.ends
+
+.subckt mux4onehot_b select0 select1 select2 A1 A2 A3 A4 Z1 Z2 Z3 Z4 nselect2 VDD
++ m3_8196_n3226# VSS
+Xx1 select0 select1 select2 x2/GN1 x2/GP1 x2/GN2 x2/GP2 x2/GN3 x2/GP3 x2/GN4 x2/GP4
++ nselect2 VDD VSS passgatesCtrlManual
+Xx2 A1 x2/GN1 A2 x2/GN2 x2/GP2 Z2 A3 x2/GN3 x2/GP3 Z3 A4 x2/GN4 x2/GP4 Z4 x2/GP1 Z1
++ VSS VDD passgatex4
+.ends
+
+.subckt sky130_fd_pr__res_high_po_1p41_DV8LAQ a_n141_n591# a_n141_159# a_n271_n721#
+X0 a_n141_159# a_n141_n591# a_n271_n721# sky130_fd_pr__res_high_po_1p41 l=1.75
+.ends
+
+.subckt muxtest SELECT0 SELECT1 VRES RSEL0 RSEL1 RSEL2 LADDEROUT OUT VDD VSS
+Xx1 RSEL0 RSEL1 RSEL2 R7R8 R6R7 R5R6 R4R5 R3R4 R2R3 R1R2 VRES LADDEROUT VDD VSS mux8onehot
+Xx2 SELECT0 SELECT1 VDD LADDEROUT VRES R3R4 R7R8 OUT OUT OUT OUT x2/nselect2 VDD VRES
++ VSS mux4onehot_b
+XXR1 VRES R1R2 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR2 R1R2 R2R3 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR3 R2R3 R3R4 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR5 R4R5 R5R6 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR4 R3R4 R4R5 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR6 R5R6 R6R7 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR7 R6R7 R7R8 VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
+XXR8 R7R8 VSS VSS sky130_fd_pr__res_high_po_1p41_DV8LAQ
 .ends
 
 .subckt sky130_fd_sc_hd__nand2_2 A B VGND VNB VPB VPWR Y
@@ -129,102 +254,6 @@ XXM9 in VDD m1_3340_n180# VDD sky130_fd_pr__pfet_01v8_XGSFBL
 XXM10 VSS VSS in m1_3340_n180# sky130_fd_pr__nfet_01v8_J2SMEF
 XXM11 VDD VDD VDD m1_3340_n180# out m1_3340_n180# VDD m1_3340_n180# m1_3340_n180#
 + out out VDD VDD m1_3340_n180# m1_3340_n180# m1_3340_n180# m1_3340_n180# out sky130_fd_pr__pfet_01v8_UG67RG
-.ends
-
-.subckt sky130_fd_sc_hd__and2_1 A B VGND VNB VPB VPWR X
-X0 VPWR B a_59_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.102877 pd=0.95413 as=0.0567 ps=0.69 w=0.42 l=0.15
-**devattr s=2268,138 d=6662,278
-X1 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.475 pd=2.95 as=0.244946 ps=2.271739 w=1 l=0.15
-**devattr s=6662,278 d=19000,590
-X2 VGND B a_145_75# VNB sky130_fd_pr__nfet_01v8 ad=0.087768 pd=0.816449 as=0.0567 ps=0.69 w=0.42 l=0.15
-**devattr s=2268,138 d=4472,208
-X3 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0567 pd=0.69 as=0.102877 ps=0.95413 w=0.42 l=0.15
-**devattr s=4704,280 d=2268,138
-X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.182 pd=1.86 as=0.135832 ps=1.263551 w=0.65 l=0.15
-**devattr s=4472,208 d=7280,372
-X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.1176 ps=1.4 w=0.42 l=0.15
-**devattr s=4704,280 d=2268,138
-.ends
-
-.subckt sky130_fd_sc_hd__and2b_1 A_N B VGND VNB VPB VPWR X
-X0 VPWR B a_207_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.111244 pd=0.929204 as=0.0609 ps=0.71 w=0.42 l=0.15
-**devattr s=2436,142 d=9116,348
-X1 X a_207_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.264867 ps=2.212389 w=1 l=0.15
-**devattr s=9116,348 d=10400,504
-X2 a_297_47# a_27_413# a_207_413# VNB sky130_fd_pr__nfet_01v8 ad=0.0504 pd=0.66 as=0.1092 ps=1.36 w=0.42 l=0.15
-**devattr s=4368,272 d=2016,132
-X3 X a_207_413# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.13602 ps=1.457047 w=0.65 l=0.15
-**devattr s=4052,198 d=6760,364
-X4 a_207_413# a_27_413# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0609 pd=0.71 as=0.111244 ps=0.929204 w=0.42 l=0.15
-**devattr s=2856,152 d=2436,142
-X5 VPWR A_N a_27_413# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.111244 pd=0.929204 as=0.1092 ps=1.36 w=0.42 l=0.15
-**devattr s=4368,272 d=2856,152
-X6 VGND B a_297_47# VNB sky130_fd_pr__nfet_01v8 ad=0.08789 pd=0.941476 as=0.0504 ps=0.66 w=0.42 l=0.15
-**devattr s=2016,132 d=4052,198
-X7 a_27_413# A_N VGND VNB sky130_fd_pr__nfet_01v8 ad=0.1092 pd=1.36 as=0.08789 ps=0.941476 w=0.42 l=0.15
-**devattr s=4368,272 d=4368,272
-.ends
-
-.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.2262 pd=2.26 as=0.2262 ps=2.26 w=0.87 l=1.05
-**devattr d=9048,452
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.143 ps=1.62 w=0.55 l=1.05
-**devattr d=5720,324
-.ends
-
-.subckt passgatesCtrlManual SEL0 SEL1 SEL2 gno0 gpo0 gno1 gpo1 gno2 gpo2 gno3 gpo3
-+ nSEL2 VPWR VGND
-Xx1 SEL0 VGND VGND VPWR VPWR nSEL0 sky130_fd_sc_hd__inv_2
-Xx2 SEL1 VGND VGND VPWR VPWR nSEL1 sky130_fd_sc_hd__inv_2
-Xx7 nSEL0 nSEL1 VGND VGND VPWR VPWR gno0 sky130_fd_sc_hd__and2_1
-Xx8 SEL1 SEL0 VGND VGND VPWR VPWR gno1 sky130_fd_sc_hd__and2b_1
-Xx9 SEL0 SEL1 VGND VGND VPWR VPWR gno2 sky130_fd_sc_hd__and2b_1
-Xx10 SEL1 SEL0 VGND VGND VPWR VPWR gno3 sky130_fd_sc_hd__and2_1
-Xx11 gno0 VGND VGND VPWR VPWR gpo0 sky130_fd_sc_hd__inv_2
-Xx12 gno1 VGND VGND VPWR VPWR gpo1 sky130_fd_sc_hd__inv_2
-Xx13 gno2 VGND VGND VPWR VPWR gpo2 sky130_fd_sc_hd__inv_2
-Xx15 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
-Xx14 gno3 VGND VGND VPWR VPWR gpo3 sky130_fd_sc_hd__inv_2
-Xx16 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
-Xx17 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
-Xx18 SEL2 VGND VGND VPWR VPWR nSEL2 sky130_fd_sc_hd__inv_2
-Xx19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
-.ends
-
-.subckt sky130_fd_pr__nfet_01v8_lvt_PEJ72P a_n35_21# a_35_109# a_n195_n1883# a_n35_n1797#
-+ a_n93_n1709# a_n93_109# a_35_n1709#
-X0 a_35_n1709# a_n35_n1797# a_n93_n1709# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
-**devattr s=92800,3316 d=92800,3316
-X1 a_35_109# a_n35_21# a_n93_109# a_n195_n1883# sky130_fd_pr__nfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=0.35
-**devattr s=92800,3316 d=92800,3316
-.ends
-
-.subckt sky130_fd_pr__pfet_01v8_lvt_4QFMR3 a_n35_21# a_n93_118# a_n35_n2215# a_n93_n2118#
-+ a_35_118# a_35_n2118# w_n231_n2337#
-X0 a_35_n2118# a_n35_n2215# a_n93_n2118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
-**devattr s=116000,4116 d=116000,4116
-X1 a_35_118# a_n35_21# a_n93_118# w_n231_n2337# sky130_fd_pr__pfet_01v8_lvt ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.35
-**devattr s=116000,4116 d=116000,4116
-.ends
-
-.subckt passgate A GN GP Z VSS VDD
-XXM1 GN Z VSS GN A A Z sky130_fd_pr__nfet_01v8_lvt_PEJ72P
-XXM3 GP Z GP Z A A VDD sky130_fd_pr__pfet_01v8_lvt_4QFMR3
-.ends
-
-.subckt passgatex4 A1 GN1 A2 GN2 GP2 Z2 A3 GN3 GP3 Z3 A4 GN4 GP4 Z4 VSS GP1 Z1 VDD
-Xx1 A1 GN1 GP1 Z1 VSS VDD passgate
-Xx2 A2 GN2 GP2 Z2 VSS VDD passgate
-Xx3 A3 GN3 GP3 Z3 VSS VDD passgate
-Xx4 A4 GN4 GP4 Z4 VSS VDD passgate
-.ends
-
-.subckt mux4onehot_b select0 select1 select2 A1 A2 A3 A4 Z1 Z2 Z3 Z4 nselect2 VDD
-+ VSS
-Xx1 select0 select1 select2 x2/GN1 x2/GP1 x2/GN2 x2/GP2 x2/GN3 x2/GP3 x2/GN4 x2/GP4
-+ nselect2 VDD VSS passgatesCtrlManual
-Xx2 A1 x2/GN1 A2 x2/GN2 x2/GP2 Z2 A3 x2/GN3 x2/GP3 Z3 A4 x2/GN4 x2/GP4 Z4 VSS x2/GP1
-+ Z1 VDD passgatex4
 .ends
 
 .subckt sky130_ef_sc_hd__decap_12 VGND VPWR VPB VNB
@@ -749,13 +778,48 @@ XFILLER_0_9_48 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
 Xoutput6 net6 VGND VGND VPWR VPWR counter[4] sky130_fd_sc_hd__buf_1
 .ends
 
-.subckt ringtest VDD VSS enable_ring select0 select1 enable_counter mux_out
+.subckt ringtest enable_ring select0 select1 enable_counter mux_out VDD VSS
 Xx1 VDD enable_ring ring_out VSS ring
 Xx2 VDD ring_out drv_out VSS driver
 Xx3 select0 select1 VDD ring_out drv_out counter3 counter7 mux_out mux_out mux_out
-+ mux_out x3/nselect2 VDD VSS mux4onehot_b
++ mux_out x3/nselect2 VDD x3/m3_8196_n3226# VSS mux4onehot_b
 Xx4 VDD drv_out enable_counter x4/counter[0] x4/counter[1] x4/counter[2] counter3
 + x4/counter[4] x4/counter[5] x4/counter[6] counter7 x4/counter[8] x4/counter[9] VSS
 + simplecounter
+.ends
+
+.subckt tt_um_patdeegan_anamux clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5] ua[6]
++ ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0]
++ uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0]
++ uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0]
++ uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0]
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR VSS
+Xmuxtest_0 ui_in[3] ui_in[4] ua[0] ui_in[0] ui_in[1] ui_in[2] ua[3] ua[2] VDPWR VSS
++ muxtest
+Xringtest_0 ui_in[6] ui_in[3] ui_in[4] ui_in[5] ua[1] VDPWR VSS ringtest
+R0 VSS uio_oe[7] 0.000000
+R1 VSS uo_out[2] 0.000000
+R2 VSS uio_oe[6] 0.000000
+R3 VSS uo_out[1] 0.000000
+R4 VSS uio_oe[5] 0.000000
+R5 VSS uo_out[0] 0.000000
+R6 VSS uio_oe[4] 0.000000
+R7 VSS uio_out[7] 0.000000
+R8 VSS uio_oe[3] 0.000000
+R9 VSS uio_out[6] 0.000000
+R10 VSS uio_oe[1] 0.000000
+R11 VSS uio_oe[2] 0.000000
+R12 VSS uio_out[4] 0.000000
+R13 VSS uio_out[5] 0.000000
+R14 VSS uo_out[7] 0.000000
+R15 VSS uio_out[3] 0.000000
+R16 VSS uo_out[6] 0.000000
+R17 VSS uo_out[5] 0.000000
+R18 VSS uio_oe[0] 0.000000
+R19 VSS uio_out[2] 0.000000
+R20 VSS uio_out[1] 0.000000
+R21 VSS uo_out[4] 0.000000
+R22 VSS uio_out[0] 0.000000
+R23 VSS uo_out[3] 0.000000
 .ends
 

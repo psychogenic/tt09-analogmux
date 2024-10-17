@@ -5,6 +5,11 @@ K {}
 V {}
 S {}
 E {}
+T {The 4:1 mux output is selected with select[1:0] and will be:
+ * 0: raw ring oscillator output
+ * 1: the buffered ring osc output (through driver)
+ * 2: the output of the counter bit[3]
+ * 3: the output of the counter bit[7]} 690 -30 0 0 0.3 0.3 {}
 N 510 -210 550 -210 {
 lab=ring_out}
 N 550 -210 550 -180 {

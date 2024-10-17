@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "Analog MUX module"      # Project title
+  author:       "Pat Deegan"      # Your name
+  discord:      "psychogenictech"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Pipe 4 or 8 analog signals around, useful for adding debug and inspection to analog projects without wasting many pins"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -15,22 +15,21 @@ project:
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_patdeegan_anamux"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
+  ui[0]: "RSEL0"
+  ui[1]: "RSEL1"
+  ui[2]: "RSEL2"
+  ui[3]: "SEL0"
+  ui[4]: "SEL1"
+  ui[5]: "enable_counter"
+  ui[6]: "enable_ringosc"
   ui[7]: ""
 
   # Outputs
@@ -54,10 +53,10 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
+  ua[0]: "VRES"
+  ua[1]: "RINGOUT"
+  ua[2]: "MUXOUT"
+  ua[3]: "LADDEROUT"
   ua[4]: ""
   ua[5]: ""
 
