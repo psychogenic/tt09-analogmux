@@ -3,7 +3,7 @@ project:
   title:        "Analog MUX module"      # Project title
   author:       "Pat Deegan"      # Your name
   discord:      "psychogenictech"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Pipe 4 or 8 analog signals around, useful for adding debug and inspection to analog projects without wasting many pins"      # One line description of what your project does
+  description:  "Pipe 4 or 8 analog signals around through switchable passgates, useful for adding debug and inspection to analog projects without wasting many pins"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
