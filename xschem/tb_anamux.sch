@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 2780 -3090 4995 -2320 {flags=graph
+B 2 2730 -3060 4945 -1990 {flags=graph
 y1=-0.058
 y2=1.9
 ypos1=0
@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -36,8 +36,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -61,8 +61,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -77,7 +77,7 @@ logy=0
 
 color="4 4 4 4 4 4 4 4 4"
 node="RSELECTION;\\"RSEL0 1.8 / RSEL1 + RSEL2 2 * +\\""}
-B 2 1180 -1940 2665 -1440 {flags=graph
+B 2 1170 -1410 2655 -910 {flags=graph
 y1=1.7
 y2=1.8
 ypos1=0
@@ -85,8 +85,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -102,7 +102,7 @@ logy=0
 color="4 6 6 6"
 node="en_ring;\\"en_ring 0.004 -\\"
 en_counter"}
-B 2 2790 -2250 4995 -1600 {flags=graph
+B 2 1180 -1950 2665 -1470 {flags=graph
 y1=0.18
 y2=1.9
 ypos1=0
@@ -110,8 +110,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -125,7 +125,7 @@ logy=0
 
 color=7
 node="ladderOut;ladoutpx"}
-B 2 1200 -1340 3415 -570 {flags=graph
+B 2 2740 -1930 4965 -920 {flags=graph
 y1=0.17
 y2=1.8
 ypos1=0
@@ -133,8 +133,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.5989e-08
-x2=1.44001e-07
+x1=1e-11
+x2=1.85e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -153,103 +153,120 @@ T {Muxtest out (ua[2]) selection, depends on select[1:0]:
   * 0: the resistor ladder mux (ladderout)
   * 1: the resistor src VRES, through only this mux 
   * 2: A5 point, between R3 and R4
-  * 3: A1 point, on top of last R in chain above GND (R8)} 560 -1150 0 0 0.3 0.3 {}
+  * 3: A1 point, on top of last R in chain above GND (R8)} 2390 -600 0 0 0.3 0.3 {}
 T {Ladderout (ua[3]) is always the output from the inner 
 8:1 MUX (two stages) and depends on rsel[2:0]:
  * 0-6 increasing voltage in Rdiv
- * 7: the top VRES itself} 560 -1040 0 0 0.3 0.3 {}
+ * 7: the top VRES itself} 2390 -490 0 0 0.3 0.3 {}
 T {ring_out (ua[1]) is a 4:1 mux, depending on select[1:0] and will be:
  * 0: raw ring oscillator output
  * 1: the buffered ring osc output (through driver)
  * 2: the output of the counter bit[3]
- * 3: the output of the counter bit[7]} 560 -1260 0 0 0.3 0.3 {}
-T {VRES (ua[0]) is an input, the V on top of the monitored resistor ladder.} 560 -1350 0 0 0.3 0.3 {}
-N 1270 -160 1270 -130 {
+ * 3: the output of the counter bit[7]} 2390 -710 0 0 0.3 0.3 {}
+T {VRES (ua[0]) is an input, the V on top of the monitored resistor ladder.} 2390 -800 0 0 0.3 0.3 {}
+T {Full mixed-signal simulation of 4:1 and 8:1 MUXes, with ring osc, counter and resistor ladder} 1530 -3210 0 0 1.3 1.3 {}
+T {ring out sequence:
+ counter[3]
+ ring driver
+ ring osc raw
+ ring driver
+ counter[7]} 5020 -2720 0 0 1 1 {}
+T {muxout (and px):
+ * R3R4 junction
+ * VRES top
+ * r ladder climb
+ * VRES
+ * R3R4 junction
+ * R7R8 junction} 5010 -1880 0 0 1 1 {}
+T {RSEL[2:0]} 1060 -2880 0 0 1 1 {}
+T {SEL[1:0]} 1070 -2400 0 0 1 1 {}
+T {R-Ladder} 1050 -1870 0 0 1 1 {}
+N 2500 -190 2500 -160 {
 lab=VSS}
-N 1090 -240 1120 -240 {
+N 2320 -270 2350 -270 {
 lab=VRES}
-N 1090 -220 1270 -220 {
+N 2320 -250 2500 -250 {
 lab=RINGOUTPX}
-N 1270 -220 1310 -220 {
+N 2500 -250 2540 -250 {
 lab=RINGOUTPX}
-N 1210 -140 1210 -110 {
+N 2440 -170 2440 -140 {
 lab=VSS}
-N 1150 -120 1150 -90 {
+N 2380 -150 2380 -120 {
 lab=VSS}
-N 1090 -180 1150 -180 {
+N 2320 -210 2380 -210 {
 lab=LADOUTPX}
-N 1090 -200 1210 -200 {
+N 2320 -230 2440 -230 {
 lab=MUXOUTPX}
-N 1150 -180 1160 -180 {
+N 2380 -210 2390 -210 {
 lab=LADOUTPX}
-N 770 -560 790 -560 {
+N 2000 -590 2020 -590 {
 lab=SEL0}
-N 770 -540 790 -540 {
+N 2000 -570 2020 -570 {
 lab=SEL1}
-N 1160 -180 1170 -180 {
+N 2390 -210 2400 -210 {
 lab=LADOUTPX}
-N 290 290 290 320 {
+N 1590 -220 1590 -190 {
 lab=VSS}
-N 110 210 140 210 {
+N 1410 -300 1440 -300 {
 lab=VRES}
-N 110 230 290 230 {
+N 1410 -280 1590 -280 {
 lab=RINGOUT}
-N 290 230 330 230 {
+N 1590 -280 1630 -280 {
 lab=RINGOUT}
-N 230 310 230 340 {
+N 1530 -200 1530 -170 {
 lab=VSS}
-N 170 330 170 360 {
+N 1470 -180 1470 -150 {
 lab=VSS}
-N 110 270 170 270 {
+N 1410 -240 1470 -240 {
 lab=LADOUT}
-N 110 250 230 250 {
+N 1410 -260 1530 -260 {
 lab=MUXOUT}
-N 170 270 180 270 {
+N 1470 -240 1480 -240 {
 lab=LADOUT}
-N -210 -110 -190 -110 {
+N 1090 -620 1110 -620 {
 lab=SEL0}
-N -210 -90 -190 -90 {
+N 1090 -600 1110 -600 {
 lab=SEL1}
-C {tt_um_patdeegan_anamux.sym} 940 -420 0 0 {name=x1
+C {tt_um_patdeegan_anamux.sym} 2170 -450 0 0 {name=x1
 schematic=tt_um_patdeegan_anamux_parax
 spice_sym_def="tcleval(.include [file normalize extracted/tt_um_patdeegan_anamux_parax.spice])"
 tclcommand="textwindow [file normalize extracted/tt_um_patdeegan_anamux_parax.spice]"
 }
-C {devices/lab_pin.sym} 790 -130 0 0 {name=p46 sig_type=std_logic lab=VCC}
-C {devices/lab_pin.sym} 790 -150 0 0 {name=p47 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 1270 -190 0 0 {name=R6
+C {devices/lab_pin.sym} 2020 -160 0 0 {name=p46 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} 2020 -180 0 0 {name=p47 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 2500 -220 0 0 {name=R6
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 1270 -130 2 0 {name=p48 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 770 -540 0 0 {name=p4 sig_type=std_logic lab=SEL1
+C {devices/lab_pin.sym} 2500 -160 2 0 {name=p48 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2000 -570 0 0 {name=p4 sig_type=std_logic lab=SEL1
 }
-C {devices/lab_pin.sym} 770 -560 0 0 {name=p2 sig_type=std_logic lab=SEL0
+C {devices/lab_pin.sym} 2000 -590 0 0 {name=p2 sig_type=std_logic lab=SEL0
 }
-C {devices/lab_pin.sym} 1120 -240 2 0 {name=p1 sig_type=std_logic lab=VRES}
-C {devices/lab_pin.sym} 1310 -220 2 0 {name=p3 sig_type=std_logic lab=RINGOUTPX}
-C {devices/res.sym} 1210 -170 0 0 {name=R1
+C {devices/lab_pin.sym} 2350 -270 2 0 {name=p1 sig_type=std_logic lab=VRES}
+C {devices/lab_pin.sym} 2540 -250 2 0 {name=p3 sig_type=std_logic lab=RINGOUTPX}
+C {devices/res.sym} 2440 -200 0 0 {name=R1
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 1210 -110 2 0 {name=p5 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 1150 -150 0 0 {name=R2
+C {devices/lab_pin.sym} 2440 -140 2 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 2380 -180 0 0 {name=R2
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 1150 -90 2 0 {name=p6 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 1200 -200 0 0 {name=p7 sig_type=std_logic lab=MUXOUTPX}
-C {devices/lab_wire.sym} 1170 -180 0 0 {name=p8 sig_type=std_logic lab=LADOUTPX}
-C {devices/lab_pin.sym} 790 -620 0 0 {name=p9 sig_type=std_logic lab=RSEL0
+C {devices/lab_pin.sym} 2380 -120 2 0 {name=p6 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 2430 -230 0 0 {name=p7 sig_type=std_logic lab=MUXOUTPX}
+C {devices/lab_wire.sym} 2400 -210 0 0 {name=p8 sig_type=std_logic lab=LADOUTPX}
+C {devices/lab_pin.sym} 2020 -650 0 0 {name=p9 sig_type=std_logic lab=RSEL0
 }
-C {devices/lab_pin.sym} 790 -600 0 0 {name=p10 sig_type=std_logic lab=RSEL1
+C {devices/lab_pin.sym} 2020 -630 0 0 {name=p10 sig_type=std_logic lab=RSEL1
 }
-C {devices/lab_pin.sym} 790 -580 0 0 {name=p11 sig_type=std_logic lab=RSEL2}
-C {sky130_fd_pr/corner.sym} 275 -800 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {devices/simulator_commands.sym} 275 -950 0 0 {name=COMMANDS
+C {devices/lab_pin.sym} 2020 -610 0 0 {name=p11 sig_type=std_logic lab=RSEL2}
+C {sky130_fd_pr/corner.sym} 3445 -650 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/simulator_commands.sym} 3455 -800 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false
 place=end
@@ -258,7 +275,9 @@ value="* ngspice commands
 
 .param VCC = 1.8
 .param SRCRES = 1k
+* need this for matt's weird inverter and add
 .include /home/ttuser/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+* don't want to deal with verilog, so:
 .include ../extracted/simplecounter_parax.spice
 .include stimuli_tb_anamux.cir
 .control
@@ -266,54 +285,54 @@ save all
 * op
 * write tb_anamux.raw
 * set appendwrite
-tran 1n 200n uic
+tran 1n 185n uic
 write tb_anamux.raw
 * quit 0
 .endc
 "}
-C {devices/launcher.sym} 880 -890 0 0 {name=h5
+C {devices/launcher.sym} 3750 -780 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_anamux.raw tran"
 }
-C {devices/lab_pin.sym} 790 -520 0 0 {name=p12 sig_type=std_logic lab=EN_COUNTER
+C {devices/lab_pin.sym} 2020 -550 0 0 {name=p12 sig_type=std_logic lab=EN_COUNTER
 }
-C {devices/lab_pin.sym} 790 -500 0 0 {name=p13 sig_type=std_logic lab=EN_RING
+C {devices/lab_pin.sym} 2020 -530 0 0 {name=p13 sig_type=std_logic lab=EN_RING
 }
-C {devices/lab_pin.sym} -190 320 0 0 {name=p14 sig_type=std_logic lab=VCC}
-C {devices/lab_pin.sym} -190 300 0 0 {name=p15 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 290 260 0 0 {name=R3
+C {devices/lab_pin.sym} 1110 -190 0 0 {name=p14 sig_type=std_logic lab=VCC}
+C {devices/lab_pin.sym} 1110 -210 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 1590 -250 0 0 {name=R3
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 290 320 2 0 {name=p16 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} -210 -90 0 0 {name=p17 sig_type=std_logic lab=SEL1
+C {devices/lab_pin.sym} 1590 -190 2 0 {name=p16 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1090 -600 0 0 {name=p17 sig_type=std_logic lab=SEL1
 }
-C {devices/lab_pin.sym} -210 -110 0 0 {name=p18 sig_type=std_logic lab=SEL0
+C {devices/lab_pin.sym} 1090 -620 0 0 {name=p18 sig_type=std_logic lab=SEL0
 }
-C {devices/lab_pin.sym} 140 210 2 0 {name=p19 sig_type=std_logic lab=VRES}
-C {devices/lab_pin.sym} 330 230 2 0 {name=p20 sig_type=std_logic lab=RINGOUT}
-C {devices/res.sym} 230 280 0 0 {name=R4
+C {devices/lab_pin.sym} 1440 -300 2 0 {name=p19 sig_type=std_logic lab=VRES}
+C {devices/lab_pin.sym} 1630 -280 2 0 {name=p20 sig_type=std_logic lab=RINGOUT}
+C {devices/res.sym} 1530 -230 0 0 {name=R4
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 230 340 2 0 {name=p21 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 170 300 0 0 {name=R5
+C {devices/lab_pin.sym} 1530 -170 2 0 {name=p21 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 1470 -210 0 0 {name=R5
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 170 360 2 0 {name=p22 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 220 250 0 0 {name=p23 sig_type=std_logic lab=MUXOUT}
-C {devices/lab_wire.sym} 180 270 0 0 {name=p24 sig_type=std_logic lab=LADOUT}
-C {devices/lab_pin.sym} -190 -170 0 0 {name=p25 sig_type=std_logic lab=RSEL0
+C {devices/lab_pin.sym} 1470 -150 2 0 {name=p22 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1520 -260 0 0 {name=p23 sig_type=std_logic lab=MUXOUT}
+C {devices/lab_wire.sym} 1480 -240 0 0 {name=p24 sig_type=std_logic lab=LADOUT}
+C {devices/lab_pin.sym} 1110 -680 0 0 {name=p25 sig_type=std_logic lab=RSEL0
 }
-C {devices/lab_pin.sym} -190 -150 0 0 {name=p26 sig_type=std_logic lab=RSEL1
+C {devices/lab_pin.sym} 1110 -660 0 0 {name=p26 sig_type=std_logic lab=RSEL1
 }
-C {devices/lab_pin.sym} -190 -130 0 0 {name=p27 sig_type=std_logic lab=RSEL2}
-C {devices/lab_pin.sym} -190 -70 0 0 {name=p28 sig_type=std_logic lab=EN_COUNTER
+C {devices/lab_pin.sym} 1110 -640 0 0 {name=p27 sig_type=std_logic lab=RSEL2}
+C {devices/lab_pin.sym} 1110 -580 0 0 {name=p28 sig_type=std_logic lab=EN_COUNTER
 }
-C {devices/lab_pin.sym} -190 -50 0 0 {name=p29 sig_type=std_logic lab=EN_RING
+C {devices/lab_pin.sym} 1110 -560 0 0 {name=p29 sig_type=std_logic lab=EN_RING
 }
-C {/home/ttuser/vmswap/tt09-analogmux/xschem/tt_um_patdeegan_anamux.sym} -40 30 0 0 {name=x2}
+C {/home/ttuser/vmswap/tt09-analogmux/xschem/tt_um_patdeegan_anamux.sym} 1260 -480 0 0 {name=x2}
