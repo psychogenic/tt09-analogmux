@@ -475,14 +475,15 @@ MACRO tt_um_patdeegan_anamux
     END
   END uo_out[7]
   PIN VDPWR
-    ANTENNAGATEAREA 143.192490 ;
-    ANTENNADIFFAREA 298.813782 ;
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER met4 ;
         RECT 26.400 3.740 31.500 216.500 ;
     END
   END VDPWR
   PIN VGND
+    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
