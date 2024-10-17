@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1728347809
+timestamp 1729128768
 << metal1 >>
 rect 19478 1626 19758 2240
 rect 19478 1346 20470 1626
@@ -180,7 +180,7 @@ timestamp 1728327329
 transform 0 1 22092 -1 0 3487
 box 4658 -8054 11287 -2405
 use simplecounter  x4
-timestamp 1728339728
+timestamp 1729128768
 transform 1 0 21380 0 1 -12570
 box 750 982 9094 10886
 << labels >>
