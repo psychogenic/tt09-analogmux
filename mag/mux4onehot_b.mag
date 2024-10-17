@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1728327329
+timestamp 1729136797
 << metal1 >>
 rect 4798 -2878 4926 -2784
 rect 4798 -2958 4840 -2878
@@ -115,7 +115,7 @@ timestamp 1728289486
 transform 0 -1 1696 1 0 -5526
 box 666 -4798 2906 -2962
 use passgatex4  x2
-timestamp 1728255086
+timestamp 1729136797
 transform 1 0 -4302 0 1 -7698
 box 11366 -356 15589 4682
 << labels >>
@@ -143,7 +143,7 @@ flabel metal1 4798 -2878 4926 -2784 0 FreeSans 640 0 0 0 nselect2
 port 11 nsew
 flabel metal3 5742 -4980 5864 -4870 0 FreeSans 800 0 0 0 VDD
 port 12 nsew
-flabel metal3 6281 -2695 6451 -2525 0 FreeSans 800 0 0 0 VSS
+flabel metal3 6281 -2695 6451 -2530 0 FreeSans 800 0 0 0 VSS
 port 13 nsew
 flabel metal1 7146 -3218 7334 -3030 0 FreeSans 1600 0 0 0 A1
 port 3 nsew

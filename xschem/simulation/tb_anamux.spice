@@ -358,7 +358,9 @@ x1 in VSS VSS VDD VDD out sky130_fd_sc_hd__inv_2
 
 .param VCC = 1.8
 .param SRCRES = 1k
+* need this for matt's weird inverter and add
 .include /home/ttuser/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+* don't want to deal with verilog, so:
 .include ../extracted/simplecounter_parax.spice
 .include stimuli_tb_anamux.cir
 .control
@@ -366,7 +368,7 @@ save all
 * op
 * write tb_anamux.raw
 * set appendwrite
-tran 1n 200n uic
+tran 1n 185n uic
 write tb_anamux.raw
 * quit 0
 .endc

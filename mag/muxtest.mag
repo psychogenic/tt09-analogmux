@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1728362514
+timestamp 1729136797
 << locali >>
 rect 14472 -1376 14810 -1352
 rect 7090 -1378 14810 -1376
@@ -311,42 +311,42 @@ rect 5177 -6098 6047 -6097
 rect 5177 -6102 6046 -6098
 rect 4947 -6103 6046 -6102
 use mux8onehot  x1
-timestamp 1728360080
+timestamp 1729136797
 transform 1 0 -683 0 1 -10513
 box 4991 -1147 16155 7524
 use mux4onehot_b  x2
-timestamp 1728327329
+timestamp 1729136797
 transform 1 0 7994 0 1 -7186
 box 4658 -8054 11287 -2405
 use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR1 std
 timestamp 1728357323
 transform 0 -1 14757 1 0 -2427
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR2 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR2
 timestamp 1728357323
 transform 0 -1 13799 1 0 -1815
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR3 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR3
 timestamp 1728357323
 transform 0 -1 12721 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR4 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR4
 timestamp 1728357323
 transform 0 -1 11731 1 0 -1803
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR5 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR5
 timestamp 1728357323
 transform 0 -1 10653 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR6 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR6
 timestamp 1728357323
 transform 0 -1 9733 1 0 -1803
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR7 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR7
 timestamp 1728357323
 transform 0 -1 8671 1 0 -2425
 box -307 -757 307 757
-use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR8 std
+use sky130_fd_pr__res_high_po_1p41_DV8LAQ  XR8
 timestamp 1728357323
 transform 0 -1 7811 1 0 -1827
 box -307 -757 307 757

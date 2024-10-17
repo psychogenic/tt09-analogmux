@@ -202,7 +202,7 @@ flabel metal2 14797 1976 14920 2099 0 FreeSans 1600 0 0 0 select1
 port 4 nsew
 flabel metal1 13714 -5970 13914 -5770 0 FreeSans 1600 0 0 0 mux_out
 port 6 nsew
-flabel metal1 27990 -158 28270 52 0 FreeSans 1600 0 0 0 drv_out
+flabel metal1 27990 -150 28270 52 0 FreeSans 1600 0 0 0 drv_out
 flabel metal1 21176 -5906 21266 -5822 0 FreeSans 320 0 0 0 counter3
 flabel metal1 20508 -6914 20598 -6830 0 FreeSans 320 0 0 0 counter7
 flabel metal1 20172 -154 20376 28 0 FreeSans 320 0 0 0 ring_out
